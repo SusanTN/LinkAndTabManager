@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Link and Tab Manager",
+  "version": "1.0",
+  "description": "Right-click context menu to open links in a new or existing window as a new tab, or move entire tabs to a specific Firefox window.",
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "icons/LinkAndTabManager.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "linkandtabmanager@github.com"
+    }
+  },
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/LinkAndTabManager.png"
+    },
+    "default_title": "Link and Tab Manager",
+    "default_popup": "popup.html"
+  }
+}
